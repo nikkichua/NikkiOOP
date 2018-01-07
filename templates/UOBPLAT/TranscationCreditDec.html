@@ -1,0 +1,164 @@
+{% extends 'layout.html' %}
+{% block body %}
+    <div style="padding: 10px 16px;top: 0;position: sticky;background: white;">
+        <img src="static/images/uob-preferred-platinum-card.png" width="130" height="70" align="left"style="margin-left: -15px;"/>
+        <p style="padding-left:13%;font-weight: bolder;text-decoration: underline;font-size: 20px;">UOB Platinum Card</p>
+        <br>
+        <p style="padding-left:13%;margin-top: -2%;font-size: 20px;">9888-6121-0824-1112</p>
+    </div>
+    </br>
+    <hr/>
+    <div>
+        <a href="#"><img src="static/images/Spending.png" width="250" height="210"align="right" style="margin-left: -100px;margin-right: 80px;margin-top: 35px;"></a>
+        <p style="float: right;margin-top:250px;margin-right: -95px;">Spending of December</p>
+    </div>
+    <div>
+        <a href="#"><img src="static/images/weeklygraph.png" width="260" height="260"align="right" style="margin-left: -80px;margin-right: -200px;margin-top: 350px;"></a>
+        <p style="float: right;margin-top:600px;margin-right: -175px;">Weekly Spending of December</p>
+    </div>
+        <div class="dropdown" style="top: 0;position: sticky;background: white;">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" style="position: absolute;margin-top: 8px;margin-left: 670px;">
+            Filter
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu" style="width: 30%;">
+            <!--<li><a href="/TransactionCreditDecDBSBLACK">Date</a></li>-->
+        <li>
+        <div class="container">
+        <div class='col-xs-2' style="padding-left: 10px; margin-left: -20px;">
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker6'>
+                    <input type='text' class="form-control"  placeholder="Start Date" style="padding-left: 10px"/>
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    <div class='col-xs-2' style="padding-left: 25px;margin-left: -10px;">
+        <div class="form-group">
+            <div class='input-group date' id='datetimepicker7'>
+                <input type='text' class="form-control" placeholder="End Date" style="padding-left: 10px"/>
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+    </div>
+</li>
+            <li><a href="/TransactionCreditDecHightoLow">High to Low</a></li>
+            <li><a href="/TransactionCreditDecLowtoHigh">Low to High</a></li>
+            <li><a href="/TransactionCreditDecBills">Bill Payments</a></li>
+        </ul>
+    </div>
+    <table class="table table-bordered" style="width:60%;">
+
+    <h1>Transaction Details(DECEMBER)</h1>
+        <thead>
+        <tr>
+            <th style="text-align: center">#</th>
+            <th style="text-align: center">Date</th>
+            <th style="text-align: center">Time</th>
+            <th style="text-align: center">Description</th>
+            <th width="12%" style="text-align: center">Amount</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>1 Dec 2017</td>
+            <td>11:00</td>
+            <td>Cathay Cinema</td>
+            <td style="text-align: right;">$21.00</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>3 Dec 2017</td>
+            <td>10:50</td>
+            <td>Bakerzin</td>
+            <td style="text-align: right;">$46.25</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>8 Dec 2017</td>
+            <td>20:33</td>
+            <td>Raffles City - SushiTeh</td>
+            <td style="text-align: right;">$89.50</td>
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td>13 Dec 2017</td>
+            <td>13:00</td>
+            <td>PUB Bill</td>
+            <td style="text-align: right;">$115.70</td>
+        </tr>
+        <tr>
+            <th scope="row">5</th>
+            <td>17 Dec 2017</td>
+            <td>12:47</td>
+            <td>Starbucks</td>
+            <td style="text-align: right;">$23.80</td>
+        </tr>
+        <tr>
+            <th scope="row">6</th>
+            <td>20 Dec 2017</td>
+            <td>13:26</td>
+            <td>Wisma - Coach</td>
+            <td style="text-align: right;">$190.00</td>
+        </tr>
+        <tr>
+            <th scope="row">7</th>
+            <td>20 Dec 2017</td>
+            <td>19:26</td>
+            <td>Suntec City - Ding Tai Fung</td>
+            <td style="text-align: right;">$64.40</td>
+        </tr>
+        <tr>
+            <th scope="row">8</th>
+            <td>21 Dec 2017</td>
+            <td>15:47</td>
+            <td>HDB</td>
+            <td style="text-align: right;">$1000.00</td>
+        </tr>
+        <tr>
+            <th scope="row">9</th>
+            <td>22 Dec 2017</td>
+            <td>10:46</td>
+            <td>Credit Bills - Nov</td>
+            <td style="text-align: right;">$4367.50</td>
+        </tr>
+        <tr>
+            <th scope="row">10</th>
+            <td>22 Dec 2017</td>
+            <td>10:50</td>
+            <td>Starhub Bills</td>
+            <td style="text-align: right;">$116.90</td>
+        </tr>
+        <tr>
+            <th scope="row">11</th>
+            <td>24 Dec 2017</td>
+            <td>14:50</td>
+            <td>Singapore Airline</td>
+            <td style="text-align: right;">$4400.00</td>
+        </tr>
+        <tr>
+            <th scope="row">12</th>
+            <td>25 Dec 2017</td>
+            <td>15:47</td>
+            <td>Paragon - Chanel</td>
+            <td style="text-align: right;">$1200.00</td>
+        </tr>
+        <tr>
+            <th scope="row">13</th>
+            <td>30 Dec 2017</td>
+            <td>18:06</td>
+            <td>Dining - Marche</td>
+            <td style="text-align: right;">$251.86</td>
+        </tr>
+        <tr>
+            <td colspan="4" style="font-size: 30px;">Total:</td>
+            <td style="text-align: right;font-size: 30px;">SGD$11886.91</td>
+        </tr>
+        </tbody>
+    </table>
+{% endblock %}

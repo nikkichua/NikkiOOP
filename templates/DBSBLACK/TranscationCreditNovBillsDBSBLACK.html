@@ -1,0 +1,96 @@
+{% extends 'layout.html' %}
+{% block body %}
+    <div style="padding: 10px 16px;top: 0;position: sticky;background: white;">
+        <img src="static/images/dbs-black-visa-card.png" width="130" height="70" align="left" style="margin-left: -15px;"/>
+        <p style="padding-left:13%;font-weight: bolder;text-decoration: underline;font-size: 20px;">DBS Woman's Credit Card</p>
+        <br>
+        <p style="padding-left:13%;margin-top: -2%;font-size: 20px;">1234-5678-0989-4531</p>
+    </div>
+    </br>
+    <hr/>
+    <div>
+        <a href="#"><img src="static/images/Spending.png" width="250" height="210"align="right" style="margin-left: -100px;margin-right: 80px;margin-top: 35px;"></a>
+        <p style="float: right;margin-top:250px;margin-right: -95px;">Spending of November</p>
+    </div>
+    <div>
+        <a href="#"><img src="static/images/weeklygraph.png" width="260" height="260"align="right" style="margin-left: -80px;margin-right: -200px;margin-top: 290px;"></a>
+        <p style="float: right;margin-top:540px;margin-right: -175px;">Weekly Spending of November</p>
+    </div>
+        <div class="dropdown" style="top: 0;position: sticky;background: white;">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" style="position: absolute;margin-top: 8px;margin-left: 670px;">
+            Filter
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu" style="width: 30%;">
+            <!--<li><a href="/TransactionCreditDecDBSBLACK">Date</a></li>-->
+        <li>
+        <div class="container">
+        <div class='col-xs-2' style="padding-left: 10px; margin-left: -20px;">
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker6'>
+                    <input type='text' class="form-control"  placeholder="Start Date" style="padding-left: 10px"/>
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    <div class='col-xs-2' style="padding-left: 25px;margin-left: -10px;">
+        <div class="form-group">
+            <div class='input-group date' id='datetimepicker7'>
+                <input type='text' class="form-control" placeholder="End Date" style="padding-left: 10px"/>
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+    </div>
+</li>
+            <li><a href="/TranscationCreditNovHightoLowDBSBLACK">High to Low</a></li>
+            <li><a href="/TransactionCreditNovLowtoHighDBSBLACK">Low to High</a></li>
+            <li><a href="/TransactionCreditNovBillsDBSBLACK">Bill Payments</a></li>
+        </ul>
+    </div>
+
+
+    <table class="table table-bordered" style="width:60%;">
+
+    <h1>Transaction Details(NOVEMBER)</h1>
+        <thead>
+        <tr>
+            <th style="text-align: center">#</th>
+            <th style="text-align: center">Date</th>
+            <th style="text-align: center">Time</th>
+            <th style="text-align: center">Description</th>
+            <th width="12%" style="text-align: center">Amount</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>10 Nov 2017</td>
+            <td>13:36</td>
+            <td>PUB Bills</td>
+            <td style="text-align: right;">$126.70</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>26 Nov 2017</td>
+            <td>15:00</td>
+            <td>HDB</td>
+            <td style="text-align: right;">$1000.00</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>30 Nov 2017</td>
+            <td>17:36</td>
+            <td>Starhub Bill Payment</td>
+            <td style="text-align: right;">$113.70</td>
+        </tr>
+        <tr>
+            <td colspan="4" style="font-size: 30px;">Total:</td>
+            <td style="text-align: right;font-size: 30px;">SGD$1240.40</td>
+        </tr>
+        </tbody>
+    </table>
+{% endblock %}

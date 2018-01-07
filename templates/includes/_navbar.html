@@ -1,0 +1,54 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false"
+                    aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Library Books System</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/home">Home</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Manage Publications<span
+                        class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/TransactionCreditNov">NovemberUOBPLAT</a></li>
+                        <li><a href="/TransactionCreditDec">DecemberUOBPLAT</a></li>
+                        <li><a href="/TransactionCreditJan">JanuaryUOBPLAT</a></li>
+                        <li><a href="/TransactionCreditNovOCBCPLAT">NovemberOCBCPLATINUM</a></li>
+                        <li><a href="/TransactionCreditDecOCBCPLAT">DecemberOCBCPLATINUM</a></li>
+                        <li><a href="/TransactionCreditJanOCBCPLAT">JanuaryOCBCPLATINUM</a></li>
+                        <li><a href="/TransactionCreditNovDBSBLACK">NovemberDBSBLACK</a></li>
+                        <li><a href="/TransactionCreditDecDBSBLACK">DecemberDBSBLACK</a></li>
+                        <li><a href="/TransactionCreditJanDBSBLACK">JanuaryDBSBLACK</a></li>
+                        <li><a href="/TransactionDebitNovFrank">NovemberFrank</a></li>
+                        <li><a href="/TransactionDebitNovUOBDEBIT">NovemberUOBDEBIT</a></li>
+                        <li><a href="/TransactionDebitNovPASSION">NovemberPASSION</a></li>
+                        <li><a href="/graph">Graph</a></li>
+                        <li><a href="/views">View</a></li>
+                        <li><a href="/reportlostmain">Report</a></li>
+                        <li><a href="/modal">Modal</a></li>
+                        <li><a href="/Activation">Activation</a></li>
+                        <li><a href="/activationnewpage">Activationnew</a></li>
+                        <li><a href="/report">report2nd</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                {% if not session.logged_in %}
+                    <li><a href="/logout">Logout</a></li>
+                {% else %}
+                    <li><a href="/views">Views</a></li>
+                    <li><a href="/login">Login</a></li>
+                {% endif %}
+
+            </ul>
+        </div>
+    </div>
+</nav>

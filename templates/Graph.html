@@ -1,0 +1,54 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+    <div class="jumbotron text-center">
+        <h1>Show your details in graph</h1>
+    <style>
+        h1 {
+            background-color:blue;
+        }
+        .contain {
+            color: aqua;
+        }
+    </style>
+    </div>
+    <div class="contain"> you will see your last month transaction here:
+      <img src="static/images/demo.jpg" alt="Smiley face" width="420" height="420" align="middle">
+      the total is $xxx.xx
+    </div>
+<div class="container">
+    <div class='col-md-5'>
+        <div class="form-group">
+            <div class='input-group date' id='datetimepicker6'>
+                <input type='text' class="form-control" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class='col-md-5'>
+        <div class="form-group">
+            <div class='input-group date' id='datetimepicker7'>
+                <input type='text' class="form-control" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker6').datetimepicker();
+        $('#datetimepicker7').datetimepicker({
+            useCurrent: false //Important! See issue #1075
+        });
+        $("#datetimepicker6").on("dp.change", function (e) {
+            $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+        });
+        $("#datetimepicker7").on("dp.change", function (e) {
+            $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+        });
+    });
+</script>{% endblock %}

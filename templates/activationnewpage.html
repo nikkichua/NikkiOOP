@@ -1,0 +1,121 @@
+{% extends 'layout.html' %}
+{% block body %}
+<h1 class="text-center">Activation</h1>
+		<div class="table-responsive">
+			<table class="table table-bordered">
+			<thead>
+			  <tr>
+				<th>Card</th>
+				<th>Last 8 Digit</th>
+				<th style="width: 15%;">CVV<span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="top" style="margin-left: 20px"></span></th>
+				<th>Expiry Date</th>
+                <th style="width:15%;">Card Status</th>
+			  </tr>
+			</thead>
+			<tbody>
+
+			  <tr>
+				<td><img src="static/images/OCBC_Platinum_Credit_Card.jpg" width="200px" height="100px"></td>
+				<td>
+                    <form class="form-inline">
+                        <div class="form-group">
+                          <input type="text" class="form-control card-input" id="first4" placeholder="xxxx" name="first4" style="width: 40%;margin-bottom: -50px;" >
+                        </div>
+                        <div class="form-group">
+                          <label for="last4" style="margin-left: 95px;">-</label>
+                          <input type="text" class="form-control" id="last4" placeholder="xxxx" name="last4" style="width: 35%">
+                        </div>
+                    </form>
+                </td>
+				<td>
+                    <form class="form-inline" >
+                        <div class="form-group" >
+                          <input type="text" class="form-control" id="cvv" placeholder="CVV" name="cvv" style="width: 40%;margin-bottom: -50px;" >
+                        </div>
+                    </form>
+                </td>
+				<td>
+                    <form class="form-inline">
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="MM" placeholder="MM" name="MM" style="width: 25%;margin-bottom: -50px;" >
+                        </div>
+                        <div class="form-group">
+                          <label for="YY" style="margin-left: 55px;">/</label>
+                          <input type="text" class="form-control" id="YY" placeholder="YY" name="YY" style="width: 18%">
+                        </div>
+                    </form>
+                </td>
+                  <td class="text-success">Available</td>
+			  </tr>
+
+
+			  <tr>
+				<td><img src="static/images/uob-krisflyer.png" width="200px" height="100px"></td>
+                  <td>
+                    <form class="form-inline">
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="first4" placeholder="xxxx" name="first4" style="width: 40%;margin-bottom: -50px;" disabled>
+                        </div>
+                        <div class="form-group">
+                          <label for="last4" style="margin-left: 95px;">-</label>
+                          <input type="text" class="form-control" id="last4" placeholder="xxxx" name="last4" style="width: 35%" disabled>
+                        </div>
+                    </form>
+                  </td>
+				<td>
+                    <form class="form-inline">
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="cvv" placeholder="CVV" name="cvv" style="width: 40%;margin-bottom: -50px;"  disabled>
+                        </div>
+                    </form>
+                </td>
+				<td>
+                    <form class="form-inline">
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="MM" placeholder="MM" name="MM" style="width: 25%;margin-bottom: -50px;" disabled>
+                        </div>
+                        <div class="form-group">
+                          <label for="YY" style="margin-left: 55px;">/</label>
+                          <input type="text" class="form-control" id="YY" placeholder="YY" name="YY" style="width: 18%" disabled>
+                        </div>
+                    </form>
+                </td>
+                  <td class="text-danger">Pending</td>
+			  </tr>
+              <tr>
+				<td><img src="static/images/POSB_PAssioncard_debit.png" width="200px" height="100px"></td>
+                  <td>
+                    <form class="form-inline">
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="first4" placeholder="xxxx" name="first4" style="width: 40%;margin-bottom: -50px;" >
+                        </div>
+                        <div class="form-group">
+                          <label for="last4" style="margin-left: 95px;">-</label>
+                          <input type="text" class="form-control" id="last4" placeholder="xxxx" name="last4" style="width: 35%">
+                        </div>
+                    </form>
+				<td>
+                    <form class="form-inline">
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="cvv" placeholder="CVV" name="cvv" style="width: 40%;margin-bottom: -50px;">
+                        </div>
+                    </form>
+                </td>
+				<td>
+                    <form class="form-inline">
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="MM" placeholder="MM" name="MM" style="width: 25%;margin-bottom: -50px;" >
+                        </div>
+                        <div class="form-group">
+                          <label for="YY" style="margin-left: 55px;">/</label>
+                          <input type="text" class="form-control" id="YY" placeholder="YY" name="YY" style="width: 18%">
+                        </div>
+                    </form>
+                </td>
+                  <td class="text-success">Available</td>
+			  </tr>
+			</tbody>
+		  </table>
+		</div>
+<button type="button" class="btn btn-primary" style="float: right;">Submit</button>
+{% endblock %}
