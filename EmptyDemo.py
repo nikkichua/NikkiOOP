@@ -115,15 +115,7 @@ def TransactionCreditJanBillsOCBCPLAT():
 
 @app.route('/TransactionCreditNovDBSBLACK')
 def TransactionCreditNovDBSBLACK():
-    transList = []
-    #cardNo = '7381-3191-7122-0333'
-    transList = TransactionDA.retrieveTransList()
-    total = TransactionDA.calcTotalAmountByMonth(12)
-    transList = TransactionDA.filterTransByMonth(12)
-    #transList = TransactionDA.filterTransByDateRange('01/11/2017', '15/11/2017')
-    #total = TransactionDA.calcTotalAmountByDate('01/11/2017', '15/11/2017')
-    return render_template('DBSBLACK/TranscationCreditNovDBSBLACK.html', trans=transList, count=len(transList),a=total)
-    #return render_template('DBSBLACK/TranscationCreditNovDBSBLACK.html', trans=transList, count=len(transList))
+    return render_template('DBSBLACK/TranscationCreditNovDBSBLACK.html')
 
 @app.route('/TransactionCreditNovBillsDBSBLACK')
 def TranscationCreditNovSpendingDBSBLACK():
@@ -214,12 +206,7 @@ def reportlostmain():
 
 @app.route('/report')
 def report():
-    portfolioList = []
-    cardnumber = []
-    portfolioList = PortfolioDA.processPortfolio()
-    cardnumber = TransactionDA.cardno()
-
-    return render_template('/report.html', data=portfolioList, count=len(portfolioList),card=cardnumber)
+    return render_template('/report.html')
 
 @app.route('/Activation')
 def Activation():
